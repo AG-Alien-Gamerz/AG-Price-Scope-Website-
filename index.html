@@ -1,18 +1,211 @@
-<!doctype html>
-<html lang="ur" dir="rtl">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AG Price Scope helps Windows users research observed product prices across available platforms and generate a price analysis report." />
-    <meta name="theme-color" content="#0b0d0e" />
-    <meta property="og:title" content="AG Price Scope" />
-    <meta property="og:description" content="A clearer way to research and analyze product prices." />
-    <meta property="og:type" content="website" />
-    <title>AG Price Scope · قیمت تحقیق اور تجزیہ</title>
+    <meta
+      name="description"
+      content="AG Price Scope helps you research products, compare prices, and find the best deals before you buy."
+    />
+    <title>AG Price Scope | Product Research Before You Buy</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand" aria-label="AG Price Scope home">
+          <span class="brand-mark">AG</span>
+          <span>Price Scope</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#download">Download</a>
+        </nav>
+
+        <a class="button button-primary" href="#download">Download Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Smart product research</span>
+            <h1>Research products before buying and spot better deals faster.</h1>
+            <p>
+              AG Price Scope helps you compare prices, track value, and make confident
+              purchasing decisions with real-time market insight.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#download">Download for Windows</a>
+              <a class="button button-secondary" href="#features">See Features</a>
+            </div>
+
+            <div class="trust-row" aria-label="Key trust indicators">
+              <div>
+                <strong>1.2M+</strong>
+                <span>Products tracked</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Customer rating</span>
+              </div>
+              <div>
+                <strong>10 sec</strong>
+                <span>Average scan time</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="AG Price Scope dashboard preview">
+            <div class="window-card">
+              <div class="window-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-panel">
+                <div class="product-row product-head">
+                  <div>
+                    <p class="label">Product</p>
+                    <h3>Wireless Headphones</h3>
+                  </div>
+                  <span class="chip">Best deal</span>
+                </div>
+
+                <div class="price-list">
+                  <div class="price-row">
+                    <span>Store A</span>
+                    <strong>$129.99</strong>
+                  </div>
+                  <div class="price-row">
+                    <span>Store B</span>
+                    <strong>$119.00</strong>
+                  </div>
+                  <div class="price-row highlight">
+                    <span>Store C</span>
+                    <strong>$109.50</strong>
+                  </div>
+                </div>
+
+                <div class="stat-grid">
+                  <div>
+                    <p>Price drop</p>
+                    <strong>18%</strong>
+                  </div>
+                  <div>
+                    <p>Avg. value</p>
+                    <strong>$118</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Why shoppers choose AG Price Scope</span>
+            <h2>Everything you need to evaluate a product before checkout.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon-wrap">📊</div>
+              <h3>Price comparison</h3>
+              <p>See the best price across retailers and identify where the real savings are.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-wrap">🔎</div>
+              <h3>Fast product research</h3>
+              <p>Review product details, market trends, and value signals in one place.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-wrap">⏱️</div>
+              <h3>Trend tracking</h3>
+              <p>Observe price changes over time so you can buy when the product is truly discounted.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="section alt-bg">
+        <div class="container split-layout">
+          <div>
+            <span class="eyebrow">Built for buyers</span>
+            <h2>Skip the guesswork and buy with confidence.</h2>
+            <ul class="check-list">
+              <li>Compare products in seconds</li>
+              <li>Spot fake discounts and inflated pricing</li>
+              <li>Track product value before committing</li>
+              <li>Save money on everyday and big-ticket purchases</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <p class="mini-label">What makes it useful</p>
+            <h3>Make smarter purchase decisions</h3>
+            <p>
+              AG Price Scope is a practical tool for researching product value, pricing trends,
+              and the best available offers before paying.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section download-section">
+        <div class="container cta-box">
+          <div>
+            <span class="eyebrow">Download</span>
+            <h2>Get AG Price Scope for Windows.</h2>
+            <p>Built to help you research products and compare prices before purchasing.</p>
+          </div>
+
+          <div class="cta-actions">
+            <button class="button button-primary" type="button" data-download>
+              Download AG Price Scope
+            </button>
+            <p class="small-note">Windows 10 / 11 • Installer ready for setup</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 AG Price Scope</p>
+        <p>Research smarter before you buy.</p>
+      </div>
+    </footer>
+
+    <div class="modal" id="downloadModal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close-button" type="button" aria-label="Close modal">×</button>
+        <p class="mini-label">Ready to download</p>
+        <h3 id="modalTitle">Your installer is ready to connect.</h3>
+        <p>
+          Add the AG Price Scope setup file to the downloads folder and link it here to make the
+          button open the real installer.
+        </p>
+        <button class="button button-primary" type="button" data-close>Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
